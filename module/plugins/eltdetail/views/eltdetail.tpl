@@ -1171,11 +1171,12 @@ Invalid element name
                      %else:
                      <div class='well'>
                         <!-- Get the uris for the 5 standard time ranges in advance  -->
-                        %fourhours = now - 3600*4
-                        %lastday =   now - 86400
-                        %lastweek =  now - 86400*7
-                        %lastmonth = now - 86400*31
-                        %lastyear =  now - 86400*365
+                        %now=''
+                        %fourhours = '-4hours'
+                        %lastday =   '-1day'
+                        %lastweek =  '-7days'
+                        %lastmonth = '-31days'
+                        %lastyear =  '-1years'
 
                         <ul id="graph_periods" class="nav nav-pills nav-justified">
                           <li><a data-type="graph" data-period="4h" data-graphend="{{now}}" data-graphstart="{{fourhours}}"  > 4 hours</a></li>
